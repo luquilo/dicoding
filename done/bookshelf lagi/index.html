@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header class="wrapper">
+    <h1>Bookshelf App</h1>
+</header>
+
+<div class="wrapper">
+
+    <div class="container bg-white shadow" id="add-book">
+        <h2>Masukkan Buku Baru</h2>
+        <form class="form" action="#" id="form">
+            <div class="form-group form-input">
+                <label for="title">Judul</label>
+                <input class="input" type="text" id="title" name="title" placeholder="Masukkan Judul" required>
+            </div>
+            <div class="form-group form-input">
+                <label for="author">Penulis</label>
+                <input class="input" type="text" id="author" name="author" placeholder="Masukkan Nama Penulis" required>
+            </div>
+            <div class="form-group form-input">
+                <label for="author">Tahun</label>
+                <input class="input" type="number" id="year" name="year" placeholder="Masukkan Tahun" required>
+            </div>
+            <div class="form-check">
+                <label for="isCompleted">Selesai dibaca</label>
+                <input type="checkbox" id="isCompleted">
+            </div>
+            <input type="submit" value="Simpan" name="Simpan" class="btn-submit">
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>Cari Buku</h2>
+        <form action="#" class="form-search" id="searchForm">
+            <input id="searchBookTitle" class="search" type="search" placeholder="Masukkan Judul Buku yang ingin dicari!">
+            <input id="searchbtn" type="submit" value="Cari" name="Cari" class="search-submit">
+        </form>
+
+    </div>
+
+    <div class="container">
+        <h2>Buku Belum Selesai Dibaca</h2>
+        <div class="list-item" id="uncomplete-read"></div>
+    </div>
+
+
+    <div class="container">
+        <h2>Selesai Dibaca</h2>
+        <div class="list-item" id="complete-read"></div>
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+<footer class="container">
+    <p class="copyright">
+        Created With 🔥 by <a href="https://github.com/erwinprasetyo97" target="_blank">erwinprasetyo97</a>
+    </p>
+</footer>
+</body>
+</html> 

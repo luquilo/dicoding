@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Quicksand:wght@400&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* untuk menyembunyikan scroll */
+#hide-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+header {
+    display: inline;
+}
+
+.jumbotron {
+    display: flex;
+    flex-direction: column;
+}
+
+.jumbotron-img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+
+/* penggunaan shorthand padding dan margin */
+.jumbotron-text {
+    text-align: center;
+    font-size: 2em;
+    padding: 0 15px;
+    margin: 0 20px 20px;
+}
+
+
+/* membuat sticky navbar */
+nav {
+  background-color: #e9eb65;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 100;
+    text-decoration: none;
+    color: black;
+  }
+  
+  nav a:hover {
+    font-weight: 900;
+    color: red;
+  }
+  
+  nav li {
+    display: inline;
+    margin-right: 20px;
+    list-style-type: none;
+  }
+
+
