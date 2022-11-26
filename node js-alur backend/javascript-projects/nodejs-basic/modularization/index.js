@@ -19,3 +19,4 @@ const tiger = new Tiger();
 const wolf = new Wolf();
  
 fighting(tiger, wolf);
+//waw berhasil
